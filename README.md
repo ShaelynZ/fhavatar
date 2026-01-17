@@ -2,7 +2,7 @@
 
 # Generalizable and Animatable 3D Full-Head Gaussian Avatar from a Single Image
 
-[Shuling Zhao](https://github.com/ShaelynZ), &emsp; [Dan Xu](https://www.danxurgb.net/)
+[Shuling Zhao](https://github.com/ShaelynZ)  and  [Dan Xu](https://www.danxurgb.net/)
 
 The Hong Kong University of Science and Technology 
 
