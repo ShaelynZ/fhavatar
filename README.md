@@ -27,7 +27,12 @@ Coming soon. Please stay tuned. -->
 
 ## Citation
 ```
-
+@article{zhao2024synergizing,
+  title={Generalizable and Animatable 3D Full-Head Gaussian Avatar from a Single Image},
+  author={Zhao, Shuling and Xu, Dan},
+  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  year={2026}
+}
 ```
 
 ## Contact
