@@ -20,14 +20,14 @@ Given an input source image, the UV space feature extraction module extracts its
 </div>
 
 ## Updates
-- **`2026/01/18`**: We released this repo.
+- **`2026/01/19`**: We released this repo.
 
 <!-- ## Code
 Coming soon. Please stay tuned. -->
 
 ## Citation
 ```
-@article{zhao2024synergizing,
+@article{zhao2026generalizable,
   title={Generalizable and Animatable 3D Full-Head Gaussian Avatar from a Single Image},
   author={Zhao, Shuling and Xu, Dan},
   journal={arXiv preprint arXiv:xxxx.xxxxx},
