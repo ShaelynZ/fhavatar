@@ -11,6 +11,9 @@ The Hong Kong University of Science and Technology
 
 <b>TL;DR</b>: Given a single input image, we reconstruct animatable 3D full-head Gaussian avatars in a single forward pass, providing 360° view synthesis and supporting real-time (246 FPS) animation.
 
+<img src="assets/result_1.gif"  width="90%"/>
+<img src="assets/result_2.gif"  width="90%"/>
+
 ### Method
 <img src="assets/framework.jpg"  width="100%"/>
 Given an input source image, the UV space feature extraction module extracts its global and local UV feature maps for animatable 3D full-head reconstruction. The symmetric UV space feature fusion module takes advantage of the symmetry of human faces and the UV space to combine these UV feature maps. From the predicted UV Gaussian attribute maps, 3D Gaussian primitives are sampled, which can be animated with a parametric face model and rendered given a camera pose.
