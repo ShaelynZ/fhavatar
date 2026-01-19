@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Generalizable and Animatable 3D Full-Head Gaussian Avatar from a Single Image</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <!-- <link rel="icon" href="./static/images/favicon.svg"> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav>
+
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <a class="navbar-item" href="https://github.com/ShaelynZ">
+      <span class="icon">
+          <i class="fas fa-home"></i>
+      </span>
+      </a>
+
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://shaelynz.github.io/synergize-motion-appearance/">
+            Synergize-Motion-Appearance
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-2 publication-title">Generalizable and Animatable 3D Full-Head Gaussian Avatar from a Single Image</h1>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+                <a href="https://github.com/ShaelynZ">Shuling Zhao</a> &emsp; 
+              <!-- Shuling Zhao &emsp; -->
+            <span class="author-block">
+              <a href="https://www.danxurgb.net/">Dan Xu</a> </span> 
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">The Hong Kong University of Science and Technology</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href= "https://github.com/ShaelynZ/fhavatar"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <div style="text-align: center;">
+          <img src="./static/images/teaser.jpg"
+                   class="teaser" width="100%"/>
+        </div>
+        <h2 class="subtitle has-text-centered">
+          <font size=4>
+          <b>TL;DR</b>: Given a single input image, we reconstruct animatable 3D full-head Gaussian avatars in a single forward pass, providing 360&deg view synthesis and supporting real-time (246 FPS) animation.
+          </font> 
+        </h2>
+      </div>
+    </div>
+  </section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/result_1.mp4"
+                type="video/mp4">
+      </video>
+      <video id="teaser" autoplay muted loop playsinline height="100%">
+        <source src="./static/videos/result_2.mp4"
+                type="video/mp4">
+      </video>
+
+      <div id="container" style="float:left;text-align:center;width:20%">
+        <p>
+          Driving Video
+        </p>
+      </div>
+
+      <div id="container" style="float:left;text-align:center;width:80%">
+        <p>
+          Generated Avatars
+        </p>
+      </div>
+      <div id="clear" style="clear:both"></div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Building 3D animatable head avatars from a single image is an important yet challenging problem. Existing methods generally collapse under large camera pose variations, compromising the realism of 3D avatars. In this work, we propose a new framework to tackle the novel setting of one-shot 3D full-head animatable avatar reconstruction in a single feed-forward pass, enabling real-time animation and simultaneous 360&deg rendering views. To facilitate efficient animation control, we model 3D head avatars with Gaussian primitives embedded on the surface of a parametric face model within the UV space. To obtain knowledge of full-head geometry and textures, we leverage rich 3D full-head priors within a pretrained 3D generative adversarial network (GAN) for global full-head feature extraction and multi-view supervision. To increase the fidelity of the 3D reconstruction of the input image, we take advantage of the symmetric nature of the UV space and human faces to fuse local fine-grained input image features with the global full-head textures. Extensive experiments demonstrate the effectiveness of our method, achieving high-quality 3D full-head modeling as well as real-time animation, thereby improving the realism of 3D talking avatars. 
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+
+            <!-- Method. -->
+            <div style="text-align: center;">
+                <h2 class="title is-3">Method</h2>
+            </div>
+
+            <div style="text-align: center;">
+                <img src="static/images/framework.jpg"
+                class="body"
+                alt="Framework Overview. " width="100%"/>
+            </div>
+            <p>
+                Overview of the framework. Given an input source image, the UV space feature extraction module extracts its global and local UV feature maps for animatable 3D full-head reconstruction. The symmetric UV space feature fusion module takes advantage of the symmetry of human faces and the UV space to combine these UV feature maps. From the predicted UV Gaussian attribute maps, 3D Gaussian primitives are sampled, which can be animated with a parametric face model and rendered given a camera pose.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <div class="content has-text-justified">
+            <!-- Results. -->
+            <div style="text-align: center;">
+                <h2 class="title is-3">Comparison Results</h2>
+
+                <h3 class="title is-4">Full-Head Rendering</h3>
+                <video id="demo_full-head_rendering_1" autoplay muted loop playsinline height="100%">
+                  <source src="./static/videos/full-head_rendering_1.mp4"
+                          type="video/mp4">
+                </video>
+                <br />
+                <br />
+                <video id="demo_full-head_rendering_2" autoplay muted loop playsinline height="100%">
+                  <source src="./static/videos/full-head_rendering_2.mp4"
+                          type="video/mp4">
+                </video>
+
+                <h3 class="title is-4">Self-reenactment</h3>
+                <video id="demo_self_reenactment_1" autoplay muted loop playsinline height="100%">
+                  <source src="./static/videos/self_reenactment_1.mp4"
+                          type="video/mp4">
+                </video>
+                <br />
+                <br />
+                <video id="demo_self_reenactment_2" autoplay muted loop playsinline height="100%">
+                  <source src="./static/videos/self_reenactment_2.mp4"
+                          type="video/mp4">
+                </video>
+
+
+                <h3 class="title is-4">Cross-identity Reenactment</h3>
+                <video id="demo_cross_id_reenactment_1" autoplay muted loop playsinline height="100%">
+                  <source src="./static/videos/cross_id_reenactment_1.mp4"
+                          type="video/mp4">
+                </video>
+                <br />
+                <br />
+                <video id="demo_cross_id_reenactment_2" autoplay muted loop playsinline height="100%">
+                  <source src="./static/videos/cross_id_reenactment_2.mp4"
+                          type="video/mp4">
+                </video>
+                <br />
+                <br />
+                <video id="demo_cross_id_reenactment_3" autoplay muted loop playsinline height="100%">
+                  <source src="./static/videos/cross_id_reenactment_3.mp4"
+                          type="video/mp4">
+                </video>
+
+            </div>
+            
+
+            
+          <div id="clear" style="clear:both"></div>
+
+
+            
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+            <!-- Demo. -->
+            <!-- <div class="content has-text-centered">
+                <video id="replay-video"
+                       controls
+                       muted
+                       preload
+                       playsinline
+                       width="100%">
+                  <source src="static/videos/demo.mp4"
+                          type="video/mp4">
+                </video>
+              </div>-->
+
+            
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+<pre><code>
+
+</code></pre>
+
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/ShaelynZ/fhavatar" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+      
+    </div>
+
+    <div class="content has-text-centered">
+        <p>
+            The website template is borrowed from <a
+            href="https://nerfies.github.io/">Nerfies</a>.
+        </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
