@@ -7,7 +7,7 @@
 The Hong Kong University of Science and Technology 
 
 <a href='https://shaelynz.github.io/fhavatar/'><img src='https://img.shields.io/badge/Project-Page-green.svg'></a> 
-<a href=''><img src='https://img.shields.io/badge/Paper-arXiv-red'></a>
+<a href='https://arxiv.org/abs/2601.12770'><img src='https://img.shields.io/badge/Paper-arXiv-red'></a>
 
 <b>TL;DR</b>: Given a single input image, we reconstruct animatable 3D full-head Gaussian avatars in a single forward pass, providing 360° view synthesis and supporting real-time (246 FPS) animation.
 
@@ -30,7 +30,7 @@ Coming soon. Please stay tuned. -->
 @article{zhao2026generalizable,
   title={Generalizable and Animatable 3D Full-Head Gaussian Avatar from a Single Image},
   author={Zhao, Shuling and Xu, Dan},
-  journal={arXiv preprint arXiv:xxxx.xxxxx},
+  journal={arXiv preprint arXiv:2601.12770},
   year={2026}
 }
 ```
