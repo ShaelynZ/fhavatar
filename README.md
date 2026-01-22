@@ -12,7 +12,6 @@ The Hong Kong University of Science and Technology
 <b>TL;DR</b>: Given a single input image, we reconstruct animatable 3D full-head Gaussian avatars in a single forward pass, providing 360° view synthesis and supporting real-time (246 FPS) animation.
 
 <img src="assets/result_1.gif"  width="90%"/>
-<img src="assets/result_2.gif"  width="90%"/>
 
 ### Method
 <img src="assets/framework.jpg"  width="100%"/>
